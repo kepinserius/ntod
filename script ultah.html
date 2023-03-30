@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ucapan Ulang Tahun</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: center;
+        padding: 20px;
+        background-color: #ffe0bd;
+      }
+      h1 {
+        font-size: 3em;
+        margin-bottom: 30px;
+        color: #ff5733;
+        text-shadow: 2px 2px #e86e3d;
+      }
+      p {
+        font-size: 1.2em;
+        line-height: 1.5;
+        margin-bottom: 20px;
+        color: #666;
+        text-align: justify;
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      button {
+        background-color: #ff5733;
+        color: #fff;
+        font-size: 1.2em;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease-in-out;
+      }
+      button:hover {
+        background-color: #e86e3d;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HABEDAYYYYY SAYANGKUUUUUUUUUU CINTAKUUUUUUUUU!</h1>
+    <p>
+      Semoga hari spesialmu ini dipenuhi dengan kebahagiaan, cinta, dan berkat.
+      Selamat berulang tahun dan semoga kamu terus menjadi sosok yang luar
+      biasa, penuh dengan semangat dan inspirasi bagi orang-orang di sekitarmu.
+    </p>
+    <p>
+      Semoga usiamu yang baru ini membawa banyak kesuksesan, keberuntungan, dan
+      pencapaian baru. Teruslah berjuang untuk mewujudkan impianmu dan jangan
+      pernah berhenti mengejar apa yang kamu inginkan.
+    </p>
+    <p>
+      Selamat ulang tahun sekali lagi dan semoga kamu selalu bahagia dengan
+      kesehatan dan cinta. Selamat merayakan hari spesialmu!
+    </p>
+    <button onclick="share()">Bagikan Ucapan Ini</button>
+
+    <script>
+      function share() {
+        var url = "https://example.com/ucapan-ulang-tahun"; // habede untuk cantikku
+        var text = "Selamat ulang tahun!"; // habede untuk cantikku
+        window.open(
+          "https://api.whatsapp.com/send?text=" +
+            encodeURIComponent(text) +
+            "%0A" +
+            encodeURIComponent(url)
+        );
+      }
+    </script>
+  </body>
+</html>
